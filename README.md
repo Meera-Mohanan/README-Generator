@@ -9,7 +9,7 @@
 * Command-line application that dynamically generates a professional README.md file. 
 
    ## Installation - 
-* NPM Libraries,VS code 
+* NPM Libraries & VS Code 
 
    ## Contributing - 
 * Meera Mohanan 
