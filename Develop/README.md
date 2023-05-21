@@ -9,7 +9,7 @@
 * Command-line application that dynamically generates a professional README.md file. 
 
    ## Installation - 
-* NPM Libraries ,VS Code 
+* NPM Libraries,VS Code. 
 
    ## Contributing - 
 * Meera Mohanan 
@@ -18,7 +18,7 @@
 * None 
 
    ## Live Link - 
-*  
+* https://github.com/Meera-Mohanan/README-Generator 
 
    ## Questions - 
 * Check out my GitHub - https://github.com/Meera-Mohanan 
