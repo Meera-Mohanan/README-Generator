@@ -6,10 +6,11 @@
   ![License Link](https://opensource.org/licenses/MIT-.org/)
   # Project Title -  README-Generator 
    ## Description - 
-* Command-line application that dynamically generates a professional README.md file. 
-* Demo video Link :https://drive.google.com/file/d/1ihor56sDODX0GlJDZDqcdermwZoxpg3E/view
+* Command-line application that dynamically generates a professional README.md file 
+* Demo Video Link :https://drive.google.com/file/d/1JyX6H4U9fykz_lj8zqx-fe_ZyUXMzByP/view
+
    ## Installation - 
-* NPM Libraries & VS Code 
+* NPM Libraries & VS code 
 
    ## Contributing - 
 * Meera Mohanan 
