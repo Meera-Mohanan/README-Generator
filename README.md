@@ -7,6 +7,7 @@
   # Project Title -  README-Generator 
    ## Description - 
 * Command-line application that dynamically generates a professional README.md file. 
+* 
 
    ## Installation - 
 * NPM Libraries & VS Code 
