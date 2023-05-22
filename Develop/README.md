@@ -7,7 +7,6 @@
   # Project Title -  README-Generator 
    ## Description - 
 * Command-line application that dynamically generates a professional README.md file 
-* Demo Video Link :https://drive.google.com/file/d/1JyX6H4U9fykz_lj8zqx-fe_ZyUXMzByP/view
 
    ## Installation - 
 * NPM Libraries & VS code 
@@ -19,7 +18,7 @@
 * None 
 
    ## Live Link - 
-* https://github.com/Meera-Mohanan/README-Generator 
+* https://drive.google.com/file/d/1JyX6H4U9fykz_lj8zqx-fe_ZyUXMzByP/view 
 
    ## Questions - 
 * Check out my GitHub - https://github.com/Meera-Mohanan 
