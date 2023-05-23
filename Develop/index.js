@@ -1,53 +1,65 @@
 // TODO: Include packages needed for this application
-const path = require("path")
-const fs = require("fs")
-const inquirer = require("inquirer")
-const generateMarkdown = require("./utils/generateMarkdown") //imports generatemakedown 
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: "input",
         name: "title",
-        message: "What is the title of your project?"
+        message: "What is your project's name?"
 
-    }, {
+    }, 
+    {
         type: "input",
         name: "description",
-        message: "Can you provide a description of your project?"
-
-    }, {
-        type: "input",
-        name: "install",
-        message: "What installations were used?"
-
-    }, {
-        type: "input",
-        name: "contributing",
-        message: "Who contributed to your project?"
+        message: "Please write a short description of your project"
 
 
-    }, {
-        type: "input",
-        name: "tests",
-        message: "Were any tests ran?"
-
-    }, {
-        type: "input",
-        name: "url",
-        message: "What is your project's live link?"
-
-    }, {
+    }, 
+    {
         type: "list",
         name: "license",
-        message: "What license did you use?",
-        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+        message: "Select the license your project should have?",
+        choices: [
+            'MIT', 'Open Software License 3.0', 
+            'Microsoft Public License', 
+            'GPL 3.0', 'BSD 3'
+        ],
 
-    }, {
+    }, 
+    {
         type: "input",
-        name: "github",
-        message: "Can you provide your GitHub link?"
+        name: "install",
+        message: "What command should be run to install dependencies?"
 
-    }, {
+    }, 
+    {
+        type: "input",
+        name: "tests",
+        message: "what command should be run to run tests?"
+
+    }, 
+    {
+        type: "input",
+        name: "usage",
+        message: "What does the user need to know about using the repo?"
+
+    }, 
+    {
+        type: "input",
+        name: "contribution",
+        message: "What does the user need to know about contributing to the repo?"
+
+    },
+    {
+        type: "input",
+        name: "username",
+        message: "What is your GitHub username?"
+
+    }, 
+    {
         type: "input",
         name: "email",
         message: "What is your email address?"
@@ -58,16 +70,19 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
-    // use fs to sync, path after to join to current working directory then add file name and data //
+    fs.writeFile(fileName, data, (err) =>
+      err ?  err : 'Success!'
+    );
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then(function (responses) {
-        writeToFile("README.md", generateMarkdown({ ...responses }))
-        //inq use prompt (built in) questions - THEN pipe to responses, write a file and data is used to generate markdown git s\
-    })
+    inquirer
+    .prompt(questions)
+    .then((response) => {
+        data = generateMarkdown(response);
+        writeToFile('README.md', data);
+    });
 }
 // Function call to initialize app
 init();
