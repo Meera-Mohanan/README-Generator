@@ -28,7 +28,7 @@ function generateMarkdown(data) {
   ${licenseBadge}
   ## Description 
   
-  ${data.description}
+  \n${data.description} \n
 
   ## Table of Contents
   * [installation](#installation)
@@ -44,13 +44,13 @@ function generateMarkdown(data) {
   ${data.install}
   \n
   ## Usage
-  ${data.usage}
+  \n${data.usage} \n
 
   ## License
-  This project is licensed under the ${data.license}.
+  \nThis project is licensed under the ${data.license} \n.
 
   ## Contributing
-  ${data.contribution}
+  \n${data.contribution} \n
 
   ## Tests
   To run test, run the following command:
