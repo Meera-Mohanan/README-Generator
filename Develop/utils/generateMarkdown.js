@@ -41,11 +41,10 @@ function generateMarkdown(data) {
   ## Installation
   To install necessary dependencies, run the following command:
   \`\`\`
-  '${data.install}'
+  ${data.install}
   \`\`\`
   ## Usage
-  \n\n
-  '${data.usage}'
+  ${data.usage}
 
   ## License
   \nThis project is licensed under the ${data.license} \n.
