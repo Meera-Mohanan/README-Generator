@@ -39,9 +39,13 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   
   ## Installation
-  \nTo install necessary dependencies, run the following command:${data.install}\n
+  To install necessary dependencies, run the following command:
+  \`\`\`
+  '${data.install}'
+  \`\`\`
   ## Usage
-  \n${data.usage} \n
+  \n\n
+  '${data.usage}'
 
   ## License
   \nThis project is licensed under the ${data.license} \n.
