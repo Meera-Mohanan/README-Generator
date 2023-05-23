@@ -1,8 +1,8 @@
-# README Genarator
+# ReadMe
   ![MIT license](https://img.shields.io/badge/license-MIT-blue)
   ## Description 
   
-  Based on a seriese of command line prompts this application will generate a full fledged README
+  This is a README that was created with this app
 
   ## Table of Contents
   * [installation](#installation)
@@ -18,19 +18,19 @@
   npm i
   ```
   ## Usage
-  npm test
+  follow the instructions in the README
 
   ## License
   This project is licensed under the MIT.
 
   ## Contributing
-  
+  please email me
 
   ## Tests
   To run test, run the following command:
   ```
-  To run test, run the following command:
+  npm test
   ```
 
   ## Questions
-  If you have any questions about the repo, open an issue or contact me directly at . you can find more of my work at [](https://github.com/)
+  If you have any questions about the repo, open an issue or contact me directly at meera.mohanan@gmail.com. you can find more of my work at [MeeraMohanan](https://github.com/MeeraMohanan)
